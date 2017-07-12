@@ -38,6 +38,7 @@ PRODUCT_COPY_FILES += device/google/marlin/media_profiles.xml:system/etc/media_p
 # Override heap growth limit due to high display density on device
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapminfree=2m \
     ro.telephony.default_cdma_sub=0
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -64,7 +65,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_small_cache_width=1024 \
     ro.hwui.text_small_cache_height=1024 \
     ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_large_cache_height=1024
+    ro.hwui.text_large_cache_height=2048
 
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += fs_config_files \
