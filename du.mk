@@ -32,5 +32,5 @@ PRODUCT_MANUFACTURER := Google
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
-    BUILD_FINGERPRINT=google/marlin/marlin:7.1.2/NZH54B/4045503:user/release-keys \
-    PRIVATE_BUILD_DESC="marlin-user 7.1.2 NZH54B 4045503 release-keys"
+    BUILD_FINGERPRINT=google/marlin/marlin:7.1.2/NZH54D/4146044:user/release-keys \
+    PRIVATE_BUILD_DESC="marlin-user 7.1.2 NZH54D 4146044 release-keys"
