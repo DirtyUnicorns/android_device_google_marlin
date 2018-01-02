@@ -57,7 +57,10 @@ PRODUCT_COPY_FILES += \
 
 # Led packages
 PRODUCT_PACKAGES += \
-    lights.sailfish
+    lights.sailfish_sys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.lights=sailfish_sys
 
 # VR packages
 PRODUCT_PACKAGES += \
