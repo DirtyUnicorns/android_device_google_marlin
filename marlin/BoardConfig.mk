@@ -199,6 +199,8 @@ BOARD_USES_SYSTEM_OTHER_ODEX := true
 -include vendor/google_devices/marlin/BoardConfigVendor.mk
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
+
 
 #NFC
 NXP_CHIP_TYPE := 3
