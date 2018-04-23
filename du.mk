@@ -32,7 +32,22 @@ TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
 # Inherit device configuration
--include device/google/marlin/marlin/device-lineage.mk
+#-include device/google/marlin/marlin/device-lineage.mk
+
+# Camera
+PRODUCT_PACKAGES += \
+    libion \
+    Snap
+
+# IMS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
+# TextClassifier smart selection model files
+PRODUCT_PACKAGES += \
+    textclassifier.smartselection.bundle1
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := du_marlin
