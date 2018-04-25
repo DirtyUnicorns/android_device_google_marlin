@@ -21,31 +21,33 @@
 # lines, aosp and flounder, hence its name.
 #
 
-# Inherit from those products. Most specific first.
+# Inherit from AOSP products. Most specific first.
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
-# Inherit from our custom product configuration
+# Inherit DU product configuration
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit device configuration
-#-include device/google/marlin/marlin/device-lineage.mk
+# Custom device configuration
 
-# Camera
+$(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
+$(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)
+
+## Camera
 PRODUCT_PACKAGES += \
     libion \
     Snap
 
-# IMS
+## IMS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
 
-# TextClassifier smart selection model files
+## TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
@@ -61,6 +63,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="marlin-user 8.1.0 OPM2.171019.029 4657601 release-keys"
 
 BUILD_FINGERPRINT := google/marlin/marlin:8.1.0/OPM2.171019.029/4657601:user/release-keys
-
-$(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
-$(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)

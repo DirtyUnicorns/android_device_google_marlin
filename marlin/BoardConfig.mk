@@ -2,10 +2,6 @@
 #
 # Product-specific compile-time definitions
 #
-
-# Allow Lineage config to override others
--include device/google/marlin/marlin/BoardConfigLineage.mk
-
 TARGET_BOARD_PLATFORM := msm8996
 TARGET_BOOTLOADER_BOARD_NAME := marlin
 TARGET_BOARD_INFO_FILE := device/google/marlin/marlin/board-info.txt
@@ -201,7 +197,6 @@ BOARD_USES_SYSTEM_OTHER_ODEX := true
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 
-
 #NFC
 NXP_CHIP_TYPE := 3
 
@@ -220,3 +215,12 @@ endif
 
 DEVICE_MANIFEST_FILE := device/google/marlin/manifest.xml
 DEVICE_MATRIX_FILE   := device/google/marlin/compatibility_matrix.xml
+
+# Kernel
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_CONFIG := lineageos_marlin_defconfig #TODO: defconfig
+TARGET_KERNEL_SOURCE := kernel/google/marlin
+
+# Telephony
+TARGET_PROVIDES_TELEPHONY_EXT := true
