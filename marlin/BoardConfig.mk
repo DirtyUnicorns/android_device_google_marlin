@@ -219,7 +219,7 @@ DEVICE_MATRIX_FILE   := device/google/marlin/compatibility_matrix.xml
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_KERNEL_CONFIG := lineageos_marlin_defconfig #TODO: defconfig
+TARGET_KERNEL_CONFIG := du_marlin_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/marlin
 
 # Telephony
