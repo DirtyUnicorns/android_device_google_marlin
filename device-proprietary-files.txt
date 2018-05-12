@@ -28,6 +28,7 @@ lib64/librcc.so
 -priv-app/CNEService/CNEService.apk
 
 # Permissions
+etc/default-permissions/default-permissions.xml
 etc/permissions/privapp-permissions-google.xml
 etc/permissions/privapp-permissions-marlin.xml
 
@@ -78,6 +79,7 @@ priv-app/embms/oem/verizon_config_params.txt
 -priv-app/vzw_msdc_api/vzw_msdc_api.apk
 
 # Sysconfig
+etc/sysconfig/dialer_experience.xml
 etc/sysconfig/nexus.xml
 
 # VZW
@@ -96,3 +98,9 @@ priv-app/MyVerizonServices/lib/arm64/libmotricity.so
 -priv-app/VerizonAuthDialog/VerizonAuthDialog.apk;PRESIGNED
 -priv-app/VzwOmaTrigger/VzwOmaTrigger.apk;PRESIGNED
 -priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
+
+# Google
+etc/permissions/com.google.android.camera.experimental2016.xml
+etc/permissions/com.google.widevine.software.drm.xml
+-framework/com.google.android.camera.experimental2016.jar;PRESIGNED
+-framework/com.google.widevine.software.drm.jar;PRESIGNED
