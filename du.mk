@@ -27,10 +27,6 @@ $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 # Inherit DU product configuration
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
-
 # Custom device configuration
 
 $(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
@@ -38,8 +34,7 @@ $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 ## Camera
 PRODUCT_PACKAGES += \
-    libion \
-    Snap
+    libion
 
 ## IMS
 PRODUCT_PACKAGES += \

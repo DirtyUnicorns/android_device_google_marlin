@@ -1,0 +1,17 @@
+[
+  {
+    "repository":  "DirtyUnicorns/android_kernel_google_marlin",
+    "target_path": "kernel/google/marlin",
+    "branch":      "o8x"
+  },
+  {
+    "repository":  "DirtyUnicorns/android_vendor_google",
+    "target_path": "vendor/google",
+    "branch":      "o8x"
+  },
+  {
+    "repository":  "DirtyUnicorns/android_vendor_pixelgapps",
+    "target_path": "vendor/pixelgapps",
+    "branch":      "o8x"
+  }
+]
