@@ -1,4 +1,4 @@
-# Copyright (C) 2013-2018 The Dirty Unicorns Project
+# Copyright (C) 2013-2019 The Dirty Unicorns Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -56,7 +56,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
-    PRIVATE_BUILD_DESC="marlin-user 9 PQ1A.190105.004 5148680 release-keys"
+    PRIVATE_BUILD_DESC="marlin-user 9 PQ2A.190205.003 5180536 release-keys"
 
-BUILD_FINGERPRINT="google/marlin/marlin:9/PQ1A.190105.004/5148680:user/release-keys"
-BUILD_THUMBPRINT="9/PQ1A.190105.004/5148680:user/release-keys"
+BUILD_FINGERPRINT="google/marlin/marlin:9/PQ2A.190205.003/5180536:user/release-keys"
+BUILD_THUMBPRINT="9/PQ2A.190205.003/5180536:user/release-keys"
