@@ -1,0 +1,17 @@
+[
+ {
+   "repository":  "DirtyUnicorns/android_kernel_google_marlin",
+   "target_path": "kernel/google/marlin",
+   "branch":      "q10x"
+ },
+ {
+   "repository":  "DirtyUnicorns/android_vendor_codeaurora_telephony",
+   "target_path": "vendor/codeaurora/telephony",
+   "branch":      "q10x"
+ },
+ {
+   "repository":  "DirtyUnicorns/android_vendor_google",
+   "target_path": "vendor/google",
+   "branch":      "q10x"
+ }
+]
